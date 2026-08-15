@@ -31,8 +31,29 @@ NRST      ──────  NRST
 ```
 > **Important:** Do not connect the ST-LINK's 5V output to the Blue Pill's 3.3V pin.
 
+# Project Gallery 
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/00_Circuit.jpg"  width="220" />
+      <br><b>ST-Link and Blue Pill</b>
+    </td>
+    <td align="center">
+      <img src="assets/01_blink.jpg" width="280" />
+      <br><b>PB2 Blink</b>
+    </td>
+    <td align="center">
+      <img src="assets/02_power.jpg" width="255" />
+      <br><b>Power Led</b>
+    </td>
+  </tr>
+</table>
 
 
+---
+
+> The program is in the `main.c` file and I am using `STM32Cube IDE` for programming the board with `ST-Link V2` 
 
 
 ---
