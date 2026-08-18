@@ -338,7 +338,7 @@ Every Arduino call in this sketch has a direct bare-metal equivalent, documented
 
 | Arduino API (this folder) | Bare-metal equivalent (`01_Onboard_LED`) |
 |---|---|
-| `pinMode(LED_PIN, OUTPUT)` | `RCC_APB2ENR |= (1 << 3);` then configuring `GPIOB_CRL` bits `[11:8]` for output push-pull |
+| `pinMode(LED_PIN, OUTPUT)` | `RCC_APB2ENR` |= (1 << 3);` then configuring `GPIOB_CRL` bits `[11:8]` for output push-pull |
 | `digitalWrite` / `digitalRead` toggle | `GPIOB_ODR ^= (1 << 2);` |
 | `delay(500)` | `SysTick_Init()` configuring `SYST_RVR`/`SYST_CVR`/`SYST_CSR`, plus a hand-written `msTicks` counter and `delay_ms()` |
 | Automatic `while(1)` around `loop()` | Explicit `while (1) { ... }` in `main()` |
